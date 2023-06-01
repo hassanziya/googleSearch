@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Search Page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/0f5a68f0d0.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Google Search</h1>
+      <div class="mode-toggle">
+        <div id="dark-mode-icon"><i class="fa-solid fa-moon fa-lg"></i></div>
+        <div id="light-mode-icon">
+          <i class="fa-solid fa-sun fa-lg" style="color: #e2d222"></i>
+        </div>
+        <label class="switch">
+          <input type="checkbox" id="toggle-mode" />
+          <span class="slider round"></span>
+        </label>
+      </div>
+    </header>
+    <main>
+      <div class="search-container">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Enter your search query"
+        />
+        <div id="matches-container"></div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
